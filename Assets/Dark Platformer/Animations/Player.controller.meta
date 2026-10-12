@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bf5032a32a428df4980908e3690b5031
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 366952
+  packageName: Dark Platformer World - 2D Environment Pack
+  packageVersion: 1.0.1
+  assetPath: Assets/Dark Platformer/Animations/Player.controller
+  uploadId: 894870
