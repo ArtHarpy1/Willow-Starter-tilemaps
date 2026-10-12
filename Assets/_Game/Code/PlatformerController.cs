@@ -3,9 +3,10 @@ using UnityEngine;
 public class PlatformerController : MonoBehaviour
 {
     [Header("Movement Settings")]
-    [SerializeField] private float moveSpeed = 7f;
-    [SerializeField] private float jumpForce = 12f;
-    
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private float GravityForce;
+
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.2f;
@@ -15,13 +16,14 @@ public class PlatformerController : MonoBehaviour
     private bool isGrounded;
     private float moveInput;
     
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         
         // Set to Dynamic with gravity
         rb.bodyType = RigidbodyType2D.Dynamic;
-        rb.gravityScale = 3f;
+        rb.gravityScale = GravityForce;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
     
